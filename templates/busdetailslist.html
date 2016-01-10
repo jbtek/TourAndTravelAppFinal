@@ -1,0 +1,80 @@
+<div class="navnbusdetails row">
+<div class="tabbar">
+<div class="container">
+	<div class="row">
+        <div class="navtab-cnt col-lg-12">
+            <div class="nav-tab col-xs-12 col-sm-4"><a href="#">Modify</a></div>
+            <div class="nav-tab col-xs-12 col-sm-4"><div class="srcdest"></div>
+            <div class="npd"><a href="#" class="prev" title="previous day"><i></i></a>
+                <span class="date-display"></span>
+                <a href="#" class="next" title="next day"><i></i></a></div>
+            </div>
+            <div class="nav-tab col-xs-12 col-sm-4"><a data-ng-mousedown="openCalander()" href="#">+Return</a>
+            <div class="datepicker" date-format="d MMMM, y" button-prev='<i class="glyphicon glyphicon-arrow-left"></i>' button-next='<i class="glyphicon glyphicon-arrow-right"></i>'>								<input class="calendar" type="text" placeholder="dd-mmm-yyyy" ng-model="dates.returnd"/></div></div>
+        </div>
+        </div>
+</div>
+</div>
+<div class="modify-bus-search">
+    <bus-search model="cityname" citynames="dataJson" items="items" dates="dates"></bus-search>
+</div>
+<div class="navcnt">
+         <nav class="navbar navbar-default">
+         <div class="container">
+        	<div class="row">
+              <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse clearfix" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><span class="filterTxt">Filter By:</span></li>
+                    <li class="dropdown" data-ng-repeat="(key,value) in dataJson.fiterdata track by $index">
+                      <a href="#" class="dropdown-toggle dpBtn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icons icon_{{$index}}"></i><span class="filterType">{{value.title}}</span></a>
+                      <ul class="dropdown-menu">
+                        <li onClick="event.stopPropagation()" data-ng-repeat="item in value.dataTxt | split track by $index"><a href="#"><input type="checkbox"><label>{{item}}</label></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!--row-->
+        </div><!--container-->
+        </nav>
+        
+    </div><!--navcnt-->
+<div class="busdetailcnt">
+	<div class="tbcnt container">
+        <table class="table">
+        <thead>
+          <tr>
+            <th data-ng-repeat="tl in dataJson.busesfeatures.title | split:',' track by $index"><a data-ng-repeat="subth in tl | split:' ' track by $index" class="t-head">{{subth}}</a></th>
+          </tr>
+        </thead>
+        <tbody>
+        
+          <tr class="trrow" data-ng-repeat="trdata in dataJson.busesfeatures.travelDetails track by $index">
+            <td>{{trdata.title}}</td>
+            <td>{{trdata.timing}}</td>
+            <td>{{trdata.seats}}</td>
+            <td>{{trdata.rating}}</td>
+            <td>
+            <span>{{trdata.fare}}</span>
+            <a class="btn btn-primary" data-ng-click="handleViewStatus($index,$event)">View Status</a>
+            </td>
+          </tr>
+          <tr class="last-tr" style="display:none">
+          <td colspan="5">
+          <div class="collapse1" id="collapseExample1">
+              <div class="well1">
+                <p>this is right things. this is right things. this is right things. this is right things.</p>
+                <p>this is right things. this is right things. this is right things. this is right things.</p>
+                <p>this is right things. this is right things. this is right things. this is right things.</p>
+                <p>this is right things. this is right things. this is right things. this is right things.</p>
+                <p>this is right things. this is right things. this is right things. this is right things.</p>
+                <p>this is right things. this is right things. this is right things. this is right things.</p>
+              </div>
+           </div></td>
+          </tr>
+        </tbody>
+      </table>
+	</div>
+</div><!--busdetailcnt-->
+
+</div><!--maincnt-->

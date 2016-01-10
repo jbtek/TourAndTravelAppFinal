@@ -1,0 +1,27 @@
+<div class="container">
+<article class="row bus-search-form">
+	<div class="form-cnt">
+    	<ul>
+        	<li class="form-child">
+                <div class="label-cnt"><label class="lbl">From</label><input type="text" data-ng-model="model.from" placeholder="Enter a City" data-ng-keypress="handleKeyPress('from')" data-ng-blur="handleBlur('from')" auto-focus/><div data-ng-if="!model.from && isSearchBtnClicked" class="error-msg">Please select your source city</div><ul class="autoFill" data-ng-if="!selected.from"><li class="item" data-ng-repeat="item in items track by $index" data-ng-class="{active:isCurrent($index,item,'from')}" data-ng-mousedown="handleClick(item,'from')">{{item}}</li></ul></div>
+                <span class="switchButton form-sprite"></span>
+                <div class="label-cnt"><label class="lbl">To</label><input data-ng-model="model.to" type="text" placeholder="Enter a City" data-ng-keypress="handleKeyPress('to')" data-ng-blur="handleBlur('to')"/><div data-ng-if="!model.to && isSearchBtnClicked" class="error-msg">Please select your source city</div><ul class="autoFill" data-ng-if="!selected.to"><li class="item" data-ng-class="{active:isCurrent($index,item,'to')}" data-ng-mousedown="handleClick(item,'to')" data-ng-repeat="item in items track by $index">{{item}}</li></ul></div>
+            </li>
+            <li class="form-child">
+                <div class="label-cnt">
+                <label class="lbl">Date of Journey</label>
+                <div class="datepicker" date-min-limit="{{currentDateFrom}}" date-format="d MMMM, y" button-prev='<i class="glyphicon glyphicon-arrow-left"></i>' button-next='<i class="glyphicon glyphicon-arrow-right"></i>'><input class="calendar form-sprite" type="text" placeholder="dd-mmm-yyyy" ng-model="dates.from"/></div>
+                </div>
+                <div class="label-cnt">
+                <label class="lbl">Date of Return(Optional)</label>
+                <div class="datepicker" date-min-limit="{{currentDateTo}}" date-format="d MMMM, y" button-prev='<i class="glyphicon glyphicon-arrow-left"></i>' button-next='<i class="glyphicon glyphicon-arrow-right"></i>'><input class="calendar form-sprite" type="text" placeholder="dd-mmm-yyyy" ng-model="dates.to"/></div>
+                </div>
+            </li>
+            <li class="form-child">
+            <button id="sbmbtn" class="sbbtn-search" data-ng-mousedown="handleBusSearches();">Search Buses</button>
+            </li>
+        </ul>
+        
+    </div>
+</article>
+</div>

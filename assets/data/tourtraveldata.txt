@@ -1,0 +1,45 @@
+{
+	"cities":{	"city":"Agra,Ahmedabad,Alappuzha,Alwar,Amritsar,Aurangabad,Bangalore,Bharatpur,Bhavnagar,Bhikaner,Bhopal,Bhubaneshwar,Bodh,Gaya,Calangute,Chandigarh,Chennai,Chittaurgarh,Coimbatore,Cuttack,Dalhousie,Dehradun,Delhi,Diu-Island,Ernakulam,Faridabad,Gaya,Gangtok,Ghaziabad,Gurgaon,Guwahati,Gwalior,Haridwar,Hyderabad,Imphal,Indore,Jabalpur,Jaipur,Jaisalmer,Jalandhar,Jamshedpur,Jodhpur,Junagadh,Kanpur,Kanyakumari,Khajuraho,Khandala"
+	},
+	"busesfeatures":{
+		"title":"Travels,Depart Arrive Duration,Seats,Ratings,Fare",
+		"travelDetails":[
+			{"title":"India Tour and Travels","timing":"6:00AM-10:28PM","seats":"5","rating":"2","fare":"500/1000"},
+			{"title":"Rishabh Travels","timing":"6:00AM-10:28PM","seats":"5","rating":"2","fare":"500/1000"},
+			{"title":"Shrinath Travels Agency","timing":"6:00AM-10:28PM","seats":"5","rating":"2","fare":"500/1000"},
+			{"title":"Mahalaxmi Travels","timing":"6:00AM-10:28PM","seats":"5","rating":"2","fare":"500/1000"},
+			{"title":"City Land Travels","timing":"6:00AM-10:28PM","seats":"5","rating":"2","fare":"500/1000"},
+			{"title":"Shrinath Nandu Travels","timing":"6:00AM-10:28PM","seats":"5","rating":"2","fare":"500/1000"},
+			{"title":"Vikas Travels Jaipur","timing":"6:00AM-10:28PM","seats":"5","rating":"2","fare":"500/1000"},
+			{"title":"City Land Travels","timing":"6:00AM-10:28PM","seats":"5","rating":"2","fare":"500/1000"}
+		]
+	},
+	"fiterdata":[
+			{
+				"title":"Travels",
+				"dataTxt":"India Tour and Travels, Rishabh Travels,Shrinath Travels Agency,Mahalaxmi Travels,City Land Travels,Shrinath Nandu Travels,Vikas Travels Jaipur,Vikas Travels Jaipur,City Land Travels,RST Volvo,Vishwakarma Tour and Travels,Ashok Travels Regd,Shree Krishna Travels,Shrinath Nandu Travels,Raj Laxmi Travels,Ashok Tours And Travels"
+				
+			},
+			{
+				"title":"Bus Type",
+				"dataTxt":"AC,Non-AC,Sleeper,Cab"
+			},
+			{
+				"title":"Amenities",
+				"dataTxt":"WIFI,WaterBottle,Blankets,Charging Point,Movie,Reading Light,Track My Bus,Emergency Exit,Fire Extinguisher,Hammer(To Break Glass)"
+				
+			},
+			{
+				"title":"Boarding",
+				"dataTxt":"2nd petrol pump,Behroad Bus Stand,Btc bus stop,DHOLAKUNWA, METRO PILLOR No-102, HP Petrol Pump,2nd petrol pump,Behroad Bus Stand,Btc bus stop,DHOLAKUNWA, METRO PILLOR No-102, HP Petrol Pump,2nd petrol pump,Behroad Bus Stand,Btc bus stop,DHOLAKUNWA, METRO PILLOR No-102, HP Petrol Pump"
+			},
+			{
+				"title":"Dropping",
+				"dataTxt":"Sindhi Camp Raj Shree Travels,Sindhi camp, bus stand,Station Road,shop no 4 ajmeripulia gopalbari jaipur,Narayan Singh Circle,Sindhi Camp Raj Shree Travels,Sindhi camp, bus stand,Station Road,shop no 4 ajmeripulia gopalbari jaipur,Narayan Singh Circle"
+			},
+			{
+				"title":"Ratings",
+				"dataTxt":"Higher Rated,All Buses"
+			}
+		]
+}
